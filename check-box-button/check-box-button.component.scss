@@ -1,0 +1,73 @@
+@font-face { font-family: "Ionicons"; src: url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1"); src: url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1#iefix") format("embedded-opentype"), url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.ttf?v=2.0.1") format("truetype"), url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.woff?v=2.0.1") format("woff"), url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.svg?v=2.0.1#Ionicons") format("svg"); font-weight: normal; font-style: normal; }
+
+.container {
+    min-width: 120px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+.ome-chk {
+    list-style: none;
+    padding: 20px;
+}
+
+.ome-chk label{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .9);
+    border: 2px solid rgba(139, 139, 139, .3);
+    color: #adadad;
+    border-radius: 25px;
+    white-space: nowrap;
+    margin: 3px 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: all .2s;
+    width:100%;
+}
+
+.ome-chk label {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.ome-chk label::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Ionicons";
+    font-weight: 900;
+    font-size: 12px;
+    padding: 2px 6px 2px 2px;
+    content: "\f12a";
+    transition: transform .3s ease-in-out;
+}
+
+.ome-chk input[type="checkbox"]:checked + label::before {
+    content: "\f122";
+    transform: rotate(-360deg);
+    transition: transform .3s ease-in-out;
+}
+
+.ome-chk input[type="checkbox"]:checked + label {
+    border: 2px solid #3880ff;
+    background-color: #23509e;
+    color: #fff;
+    transition: all .2s;
+}
+
+.ome-chk input[type="checkbox"] {
+  display: absolute;
+}
+.ome-chk input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+.ome-chk input[type="checkbox"]:focus + label {
+  border: 2px solid #ccddf3;
+}
